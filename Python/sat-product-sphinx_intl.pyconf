@@ -1,0 +1,41 @@
+name : 'sphinx_intl'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/pip_install.sh'
+get_source : 'archive'
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/sphinxintl.py'
+}
+depend :
+[
+  'Python'
+  'setuptools'
+  'click'
+  'Sphinx'
+  'Babel'
+  'six'
+  'pytz'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/sphinx_intl'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/sphinx_intl'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/Python'
+properties :
+{
+  incremental : 'yes'
+  pip : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/sphinxintl.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '0.9.10'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/sphinxintl-0.9.10.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['Python', 'setuptools', 'click', 'Sphinx', 'six', 'Pygments', 'Jinja2', 'markupsafe', 'docutils', 'sphinxcontrib_websupport', 'packaging', 'pyparsing', 'requests', 'certifi', 'urllib3', 'idna', 'chardet', 'imagesize', 'alabaster', 'Babel', 'pytz', 'snowballstemmer']

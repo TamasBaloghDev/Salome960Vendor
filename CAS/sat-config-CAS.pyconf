@@ -1,0 +1,5 @@
+CAS : 'V7_4_0p2'
+freetype : '2.9.1'
+freeimage : '3.16.0'
+cmake : '3.12.1'
+doxygen : '1.8.14'

@@ -1,0 +1,6 @@
+<map id="TestResultCollector" name="TestResultCollector">
+<area shape="rect" id="node2" href="$class_test_success_listener.html" title="TestListener that checks if any test case failed. " alt="" coords="5,185,151,212"/>
+<area shape="rect" id="node3" href="$class_test_listener.html" title="Listener for test progress and result.Implementing the Observer pattern a TestListener may be registe..." alt="" coords="15,109,109,136"/>
+<area shape="rect" id="node4" href="$class_synchronized_object.html" title="Base class for synchronized object. " alt="" coords="134,109,273,136"/>
+<area shape="rect" id="node5" href="$class_synchronized_object_1_1_synchronization_object.html" title="Abstract synchronization object (mutex) " alt="" coords="123,5,284,47"/>
+</map>

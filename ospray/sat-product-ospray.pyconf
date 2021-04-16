@@ -1,0 +1,34 @@
+name : 'ospray'
+build_source : 'cmake'
+cmake_options : '-DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DEMBREE_ISPC_SUPPORT=ON -DEMBREE_TUTORIALS=OFF -Dembree_DIR=${embree_DIR} -DOSPRAY_ENABLE_APPS=OFF -DOSPRAY_ENABLE_TUTORIALS=OFF -DCMAKE_INSTALL_LIBDIR=lib'
+get_source : 'archive'
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/ospray.py'
+}
+depend :
+[
+  'embree'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/ospray'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/ospray'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/ospray'
+properties :
+{
+  incremental : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/ospray.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '1.8.4'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/ospray-1.8.4.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['embree', 'ispc', 'cmake', 'tbb', 'llvm', 'Python']

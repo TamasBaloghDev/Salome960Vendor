@@ -1,0 +1,8 @@
+sphinx_intl : '0.9.10'
+Python : '3.6.5'
+setuptools : '38.4.0'
+click : '6.7'
+Sphinx : '1.7.6'
+Babel : '2.7.0'
+six : '1.10.0'
+pytz : '2015.7'

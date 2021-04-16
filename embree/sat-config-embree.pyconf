@@ -1,0 +1,3 @@
+embree : '3.3.0'
+ispc : '1.9.2'
+tbb : 'native'

@@ -1,0 +1,50 @@
+name : 'sphinxcontrib_websupport'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/pip_install.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'python3-sphinxcontrib-websupport'
+  ]
+  rpm_dev : [ ]
+  apt :
+  [
+    'python3-sphinxcontrib.websupport'
+  ]
+  apt_dev : [ ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/sphinxcontrib_websupport.py'
+}
+depend :
+[
+  'Python'
+  'setuptools'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/sphinxcontrib_websupport'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/sphinxcontrib_websupport'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/Python'
+properties :
+{
+  single_install_dir : 'no'
+  pip : 'yes'
+  incremental : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/sphinxcontrib_websupport.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '1.1.0'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/sphinxcontrib_websupport-1.1.0.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['Python', 'setuptools']

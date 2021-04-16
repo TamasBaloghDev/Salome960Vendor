@@ -1,0 +1,61 @@
+name : 'PyQt'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/PyQt-5.9.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'python3-qt5'
+  ]
+  rpm_dev :
+  [
+    'python3-qt5-devel'
+  ]
+  apt :
+  [
+    'python3-pyqt5'
+  ]
+  apt_dev :
+  [
+    'pyqt5-dev'
+  ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/PyQt.py'
+}
+depend :
+[
+  'Python'
+  'qt'
+  'sip'
+]
+patches : [ ]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/PyQt'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/PyQt'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/PyQt'
+properties :
+{
+  incremental : 'yes'
+  single_install_dir : 'no'
+}
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/PyQt.pyconf'
+section : 'version_5_9'
+check_install :
+[
+  'lib/python[23].[0-9]/site-packages/PyQt5/QtGui.so'
+]
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '5.9'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/PyQt-5.9.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['Python', 'qt', 'freetype', 'cmake', 'sip']

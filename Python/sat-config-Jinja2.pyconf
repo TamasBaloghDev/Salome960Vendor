@@ -1,0 +1,4 @@
+Jinja2 : '2.7.3'
+Python : '3.6.5'
+setuptools : '38.4.0'
+markupsafe : '0.23'

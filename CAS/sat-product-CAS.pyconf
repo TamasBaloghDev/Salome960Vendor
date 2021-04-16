@@ -1,0 +1,54 @@
+name : 'CAS'
+build_source : 'cmake'
+cmake_options : '-DUSE_TCL=OFF -DBUILD_MODULE_Draw=OFF -DUSE_FREETYPE=ON -D3RDPARTY_FREETYPE_DIR=$FREETYPEDIR -DUSE_GL2PS=OFF -DUSE_FREEIMAGE=ON -D3RDPARTY_FREEIMAGE_DIR=$FREEIMAGEDIR'
+get_source : 'git'
+git_info :
+{
+  repo : 'http://git.dev.opencascade.org/repos/occt.git'
+  repo_dev : 'http://git.dev.opencascade.org/repos/occt.git'
+  tag : 'V7_4_0p2'
+}
+environ :
+{
+  # OP 19/04/2017 Artifact 8482 : Ajout des variables CAS dans la
+#                               section environ pour conserver
+#                               la generalite du script CAS.py
+  CSF_ShadersDirectory : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/Shaders'
+  CSF_UnitsLexicon : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/UnitsAPI/Lexi_Expr.dat'
+  CSF_UnitsDefinition : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/UnitsAPI/Units.dat'
+  CSF_SHMessage : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/SHMessage'
+  CSF_XSMessage : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/XSMessage'
+  CSF_MDTVTexturesDirectory : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/Textures'
+  MMGT_REENTRANT : '1'
+  CSF_StandardDefaults : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/StdResource'
+  CSF_PluginDefaults : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS/share/opencascade/resources/StdResource'
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/CAS.py'
+}
+depend :
+[
+  'freetype'
+  'freeimage'
+]
+build_depend :
+[
+  'cmake'
+  'doxygen'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/CAS'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/CAS'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/CAS'
+properties :
+{
+  incremental : 'no'
+}
+section : 'version_V7_4_0p2'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/CAS.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : 'V7_4_0p2'
+base : 'no'
+install_dir_save : 'base'
+depend_all : ['freetype', 'cmake', 'freeimage', 'doxygen', 'graphviz', 'swig']

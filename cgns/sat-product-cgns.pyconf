@@ -1,0 +1,62 @@
+name : 'cgns'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/cgns.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'cgnslib'
+  ]
+  rpm_dev :
+  [
+    'cgnslib-devel'
+  ]
+  apt :
+  [
+    'libcgns3'
+  ]
+  apt_dev :
+  [
+    'libcgns-dev'
+  ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/cgns.py'
+}
+depend :
+[
+  'hdf5'
+]
+opt_depend :
+[
+  'openmpi'
+]
+build_depend :
+[
+  'cmake'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/cgns'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/cgns'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/cgns'
+properties :
+{
+  incremental : 'yes'
+  single_install_dir : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/cgns.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '3.3.1'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/cgns-3.3.1.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['hdf5', 'cmake']

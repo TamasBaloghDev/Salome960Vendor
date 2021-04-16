@@ -1,0 +1,49 @@
+name : 'kiwisolver'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/pip_install.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'python3-kiwisolver'
+  ]
+  rpm_dev : [ ]
+  apt :
+  [
+    'python3-kiwisolver'
+  ]
+  apt_dev : [ ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/kiwisolver.py'
+}
+depend :
+[
+  'Python'
+  'setuptools'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/kiwisolver'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/kiwisolver'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/Python'
+properties :
+{
+  incremental : 'yes'
+  pip : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/kiwisolver.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '1.0.1'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/kiwisolver-1.0.1.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['Python', 'setuptools']

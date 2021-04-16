@@ -1,0 +1,42 @@
+
+#ifndef VTKIOVISITBRIDGE_EXPORT_H
+#define VTKIOVISITBRIDGE_EXPORT_H
+
+#ifdef VTKIOVISITBRIDGE_STATIC_DEFINE
+#  define VTKIOVISITBRIDGE_EXPORT
+#  define VTKIOVISITBRIDGE_NO_EXPORT
+#else
+#  ifndef VTKIOVISITBRIDGE_EXPORT
+#    ifdef IOVisItBridge_EXPORTS
+        /* We are building this library */
+#      define VTKIOVISITBRIDGE_EXPORT __attribute__((visibility("default")))
+#    else
+        /* We are using this library */
+#      define VTKIOVISITBRIDGE_EXPORT __attribute__((visibility("default")))
+#    endif
+#  endif
+
+#  ifndef VTKIOVISITBRIDGE_NO_EXPORT
+#    define VTKIOVISITBRIDGE_NO_EXPORT __attribute__((visibility("hidden")))
+#  endif
+#endif
+
+#ifndef VTKIOVISITBRIDGE_DEPRECATED
+#  define VTKIOVISITBRIDGE_DEPRECATED __attribute__ ((__deprecated__))
+#endif
+
+#ifndef VTKIOVISITBRIDGE_DEPRECATED_EXPORT
+#  define VTKIOVISITBRIDGE_DEPRECATED_EXPORT VTKIOVISITBRIDGE_EXPORT VTKIOVISITBRIDGE_DEPRECATED
+#endif
+
+#ifndef VTKIOVISITBRIDGE_DEPRECATED_NO_EXPORT
+#  define VTKIOVISITBRIDGE_DEPRECATED_NO_EXPORT VTKIOVISITBRIDGE_NO_EXPORT VTKIOVISITBRIDGE_DEPRECATED
+#endif
+
+#if 0 /* DEFINE_NO_DEPRECATED */
+#  ifndef VTKIOVISITBRIDGE_NO_DEPRECATED
+#    define VTKIOVISITBRIDGE_NO_DEPRECATED
+#  endif
+#endif
+
+#endif /* VTKIOVISITBRIDGE_EXPORT_H */

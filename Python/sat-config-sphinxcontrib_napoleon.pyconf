@@ -1,0 +1,5 @@
+sphinxcontrib_napoleon : '0.6.1'
+Python : '3.6.5'
+six : '1.10.0'
+pockets : '0.6.2'
+setuptools : '38.4.0'

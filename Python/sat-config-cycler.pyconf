@@ -1,0 +1,4 @@
+cycler : '0.10.0'
+Python : '3.6.5'
+six : '1.10.0'
+setuptools : '38.4.0'

@@ -1,0 +1,5 @@
+LIBBATCH : 'V2_4_4'
+Python : '3.6.5'
+cmake : '3.12.1'
+swig : '3.0.12'
+cppunit : '1.13.2'

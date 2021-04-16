@@ -1,0 +1,50 @@
+name : 'Jinja2'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/pip_install.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'python3-jinja2'
+  ]
+  rpm_dev : [ ]
+  apt :
+  [
+    'python3-jinja2'
+  ]
+  apt_dev : [ ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/Jinja2.py'
+}
+depend :
+[
+  'Python'
+  'setuptools'
+  'markupsafe'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/Jinja2'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/Jinja2'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/Python'
+properties :
+{
+  incremental : 'yes'
+  pip : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/Jinja2.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '2.7.3'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/Jinja2-2.7.3.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['Python', 'setuptools', 'markupsafe']

@@ -1,0 +1,42 @@
+
+#ifndef VTKREMOTINGCINEMA_EXPORT_H
+#define VTKREMOTINGCINEMA_EXPORT_H
+
+#ifdef VTKREMOTINGCINEMA_STATIC_DEFINE
+#  define VTKREMOTINGCINEMA_EXPORT
+#  define VTKREMOTINGCINEMA_NO_EXPORT
+#else
+#  ifndef VTKREMOTINGCINEMA_EXPORT
+#    ifdef RemotingCinema_EXPORTS
+        /* We are building this library */
+#      define VTKREMOTINGCINEMA_EXPORT __attribute__((visibility("default")))
+#    else
+        /* We are using this library */
+#      define VTKREMOTINGCINEMA_EXPORT __attribute__((visibility("default")))
+#    endif
+#  endif
+
+#  ifndef VTKREMOTINGCINEMA_NO_EXPORT
+#    define VTKREMOTINGCINEMA_NO_EXPORT __attribute__((visibility("hidden")))
+#  endif
+#endif
+
+#ifndef VTKREMOTINGCINEMA_DEPRECATED
+#  define VTKREMOTINGCINEMA_DEPRECATED __attribute__ ((__deprecated__))
+#endif
+
+#ifndef VTKREMOTINGCINEMA_DEPRECATED_EXPORT
+#  define VTKREMOTINGCINEMA_DEPRECATED_EXPORT VTKREMOTINGCINEMA_EXPORT VTKREMOTINGCINEMA_DEPRECATED
+#endif
+
+#ifndef VTKREMOTINGCINEMA_DEPRECATED_NO_EXPORT
+#  define VTKREMOTINGCINEMA_DEPRECATED_NO_EXPORT VTKREMOTINGCINEMA_NO_EXPORT VTKREMOTINGCINEMA_DEPRECATED
+#endif
+
+#if 0 /* DEFINE_NO_DEPRECATED */
+#  ifndef VTKREMOTINGCINEMA_NO_DEPRECATED
+#    define VTKREMOTINGCINEMA_NO_DEPRECATED
+#  endif
+#endif
+
+#endif /* VTKREMOTINGCINEMA_EXPORT_H */

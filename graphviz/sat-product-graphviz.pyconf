@@ -1,0 +1,55 @@
+name : 'graphviz'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/graphviz-2.38.0.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'graphviz'
+  ]
+  rpm_dev :
+  [
+    'graphviz-devel'
+  ]
+  apt :
+  [
+    'graphviz'
+  ]
+  apt_dev :
+  [
+    'graphviz-dev'
+  ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/graphviz.py'
+}
+depend :
+[
+  'swig'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/graphviz'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/graphviz'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/graphviz'
+properties :
+{
+  incremental : 'yes'
+  single_install_dir : 'yes'
+  compile_and_runtime : 'yes'
+}
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/graphviz.pyconf'
+section : 'version_2_38_0'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '2.38.0'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/graphviz-2.38.0.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['swig']

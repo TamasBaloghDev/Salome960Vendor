@@ -1,0 +1,52 @@
+name : 'doxygen'
+build_source : 'cmake'
+get_source : 'archive'
+system_info :
+{
+  rpm : [ ]
+  rpm_dev :
+  [
+    'doxygen'
+  ]
+  apt : [ ]
+  apt_dev :
+  [
+    'doxygen'
+  ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/doxygen.py'
+}
+depend :
+[
+  'graphviz'
+]
+build_depend :
+[
+  'cmake'
+]
+patches : [ ]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/doxygen'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/doxygen'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/doxygen'
+properties :
+{
+  incremental : 'yes'
+  compile_time : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/doxygen.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '1.8.14'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/doxygen-1.8.14.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['graphviz', 'swig', 'cmake']

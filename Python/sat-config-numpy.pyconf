@@ -1,0 +1,5 @@
+numpy : '1.15.1'
+Python : '3.6.5'
+setuptools : '38.4.0'
+Cython : '0.25.2'
+lapack : '3.8.0'

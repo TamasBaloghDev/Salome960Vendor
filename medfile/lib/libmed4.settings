@@ -1,0 +1,59 @@
+
+
+
+
+            SUMMARY OF MED CONFIGURATION
+            ============================
+
+General Information:
+-------------------
+
+                   MED Version : 4.1.0 
+                   HDF Version : "HDF5 library version: 1.10.3" 
+                  Configured on: Sat Nov 21 02:27:49 CET 2020
+                  Configured by: salome@is212912
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux is212912 4.15.0-112-generic #113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+                      Libraries: static, shared
+             Installation point: /home/tamas/Development/STH/vendor/Salome960Vendor/medfile
+
+Compiling Options:
+------------------
+                     C Compiler: /usr/bin/gcc
+                         CFLAGS: -m64
+                       CPPFLAGS: 
+               Shared Libraries: yes
+               Static Libraries: yes
+                Extra libraries:  
+          Fortran Compiler F77 : gfortran (F77 var. used to build MED library interface)
+       Fortran Compiler FFLAGS : -fdefault-integer-8 -g -O2 -ffixed-line-length-none (FFLAGS var. used to build MED library interface)
+        Fortran Compiler FLIBS :  -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. -lgfortran -lm -lquadmath (FLIBS var. used to build MED library interface)
+                    med_int is : long (based on fortran integer size (if fortran is enabled))
+                   C++ Compiler: g++
+                   C++ Flags   : -m64
+                hdf5 CPP_FLAGS : -DH5_USE_16_API -I/home/tamas/Development/STH/vendor/Salome960Vendor/hdf5/include
+                  hdf5 LDFLAGS : -L/home/tamas/Development/STH/vendor/Salome960Vendor/hdf5/lib
+                        h5dump : /home/tamas/Development/STH/vendor/Salome960Vendor/hdf5/bin/h5dump
+                    hdf5 is // : no
+                        Python : Python not available
+			  Swig : SWIG not available.
+
+Features:
+---------
+
+                              Error Messages : yes
+      Return an error if a MED file contains 
+  an object of a previous data model version 
+ which is not managable by a MED3.0 function : yes (may be time/cpu consuming for files 
+                                                    containing fields with many computation steps )
+
+#                  Compiling F90 tests suite : 
+#          FC used to compile MED .f90 tests :     
+#    FCFLAGSS used to compile MED .f90 tests : 
+#    FCLIBS   used to compile MED .f90 tests : 
+
+    FTLDFLAGS var. for linking Fortran tests : 
+      FTLIBS var.  for linking Fortran tests : 
+
+                      Tk/wish used for xmdump : /usr/bin/wish
+

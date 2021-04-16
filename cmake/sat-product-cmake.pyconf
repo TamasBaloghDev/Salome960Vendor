@@ -1,0 +1,46 @@
+name : 'cmake'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/cmake.sh'
+get_source : 'archive'
+patches : ['/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/patches/cmake-3.12.1.patch']
+system_info :
+{
+  rpm : [ ]
+  rpm_dev :
+  [
+    'cmake'
+  ]
+  apt :
+  [
+    'cmake'
+  ]
+  apt_dev : [ ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/cmake.py'
+}
+depend : [ ]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/cmake'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/cmake'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/cmake'
+properties :
+{
+  incremental : 'yes'
+  compile_time : 'yes'
+}
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/cmake.pyconf'
+section : 'version_3_12_1'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '3.12.1'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/cmake-3.12.1.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : []

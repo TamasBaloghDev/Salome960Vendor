@@ -1,0 +1,42 @@
+name : 'LIBBATCH'
+build_source : 'cmake'
+cmake_options : '-DSWIG_EXECUTABLE=${SWIG_ROOT_DIR}/bin/swig'
+get_source : 'git'
+git_info :
+{
+  repo : 'http://git.salome-platform.org/gitpub/tools/libbatch.git'
+  repo_dev : 'https://codev-tuleap.cea.fr/plugins/git/salome/libbatch.git'
+  tag : 'V2_4_4'
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/LIBBATCH.py'
+}
+depend :
+[
+  'Python'
+]
+build_depend :
+[
+  'cmake'
+  'swig'
+  'cppunit'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/LIBBATCH'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/LIBBATCH'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/LIBBATCH'
+properties :
+{
+  incremental : 'yes'
+}
+section : 'default'
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/LIBBATCH.pyconf'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : 'V2_4_4'
+base : 'no'
+install_dir_save : 'base'
+depend_all : ['Python', 'cmake', 'swig', 'cppunit']

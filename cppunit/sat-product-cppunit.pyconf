@@ -1,0 +1,55 @@
+name : 'cppunit'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/cppunit.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'cppunit'
+  ]
+  rpm_dev :
+  [
+    'cppunit-devel'
+  ]
+  apt :
+  [
+    'libcppunit'
+  ]
+  apt_dev :
+  [
+    'libcppunit-dev'
+  ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/cppunit.py'
+}
+depend : [ ]
+build_depend :
+[
+  'cmake'
+]
+patches : [ ]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/cppunit'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/cppunit'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/cppunit'
+properties :
+{
+  incremental : 'yes'
+}
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/cppunit.pyconf'
+section : 'version_1_13_2'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '1.13.2'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/cppunit-1.13.2.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['cmake']

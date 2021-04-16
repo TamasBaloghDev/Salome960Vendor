@@ -1,0 +1,3 @@
+pytz : '2015.7'
+Python : '3.6.5'
+setuptools : '38.4.0'

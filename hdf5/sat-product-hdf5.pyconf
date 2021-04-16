@@ -1,0 +1,41 @@
+name : 'hdf5'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/hdf5-1.10.3.sh'
+get_source : 'archive'
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/hdf5.py'
+}
+patches : ['/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/patches/hdf5-1.10.3.patch']
+depend : [ ]
+opt_depend :
+[
+  'openmpi'
+]
+build_depend :
+[
+  'cmake'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/hdf5'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/hdf5'
+install_dir : '/home/tamas/Development/STH/vendor/Salome960Vendor/hdf5'
+properties :
+{
+  incremental : 'yes'
+  single_install_dir : 'yes'
+}
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/hdf5.pyconf'
+section : 'version_1_10_3'
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '1.10.3'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/hdf5-1.10.3.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['cmake']

@@ -1,0 +1,4 @@
+Pillow : '7.1.1'
+Python : '3.6.5'
+setuptools : '38.4.0'
+docutils : '0.12'
