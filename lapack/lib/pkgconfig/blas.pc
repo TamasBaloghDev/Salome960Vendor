@@ -1,0 +1,8 @@
+libdir=/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/INSTALL/lapack/lib
+includedir=/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/INSTALL/lapack/include
+
+Name: BLAS
+Description: FORTRAN reference implementation of BLAS Basic Linear Algebra Subprograms
+Version: 3.8.0
+URL: http://www.netlib.org/blas/
+Libs: -L${libdir} -lblas

@@ -1,0 +1,58 @@
+name : 'lapack'
+build_source : 'script'
+compil_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/compil_scripts/lapack.sh'
+get_source : 'archive'
+system_info :
+{
+  rpm :
+  [
+    'lapack'
+  ]
+  rpm_dev :
+  [
+    'lapack-devel'
+  ]
+  apt :
+  [
+    'liblapack3'
+  ]
+  apt_dev :
+  [
+    'liblapack-dev'
+  ]
+}
+environ :
+{
+  env_script : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/env_scripts/lapack.py'
+}
+depend :
+[
+  'Python'
+]
+build_depend :
+[
+  'cmake'
+]
+source_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/SOURCES/lapack'
+build_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/BUILD/lapack'
+install_dir : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/INSTALL/lapack'
+properties :
+{
+  incremental : 'yes'
+}
+from_file : '/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SAT_SALOME/products/lapack.pyconf'
+section : 'version_3_8_0'
+patches : [ ]
+sat_version : '5.7.0'
+debug : 'no'
+verbose : 'no'
+dev : 'no'
+hpc : 'no'
+version : '3.8.0'
+base : 'no'
+archive_info :
+{
+  archive_name : '/data/tmpsalome/salome/prerequis/archives/lapack-3.8.0.tar.gz'
+}
+install_dir_save : 'base'
+depend_all : ['Python', 'cmake']

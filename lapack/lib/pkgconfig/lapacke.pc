@@ -1,0 +1,10 @@
+libdir=/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/INSTALL/lapack/lib
+includedir=/volatile/salome/jenkins/workspace/Salome_master_UB18_pilote/SALOME-9.6.0-UB18.04/INSTALL/lapack/include
+
+Name: LAPACKE
+Description: C Standard Interface to LAPACK Linear Algebra PACKage
+Version: 3.8.0
+URL: http://www.netlib.org/lapack/#_standard_c_language_apis_for_lapack
+Libs: -L${libdir} -llapacke
+Cflags: -I${includedir}
+Requires.private: lapack
